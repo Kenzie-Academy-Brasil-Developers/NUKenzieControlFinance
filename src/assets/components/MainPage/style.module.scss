@@ -1,0 +1,25 @@
+.flex_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    & > div:first-child {
+        width: clamp(0px, 100%, 35rem);
+    }
+
+    & > div:last-child {
+        width: clamp(0px, 100%, 35rem);
+    }
+}
+
+@media (min-width: 430px) {
+    .flex_box > div:last-child {
+        width: clamp(0px, 100%, 34rem);
+    }
+}
+
+@media (min-width: 995px) {
+    .flex_box > div:first-child {
+        width: clamp(0px, 100%, 22.1875rem);
+    }
+}

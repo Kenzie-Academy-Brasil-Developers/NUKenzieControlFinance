@@ -1,0 +1,15 @@
+.total_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 4.375rem;
+    margin-top: 1rem;
+    border: 2px solid var(--color-grey-2);
+    padding: .5rem 1rem;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

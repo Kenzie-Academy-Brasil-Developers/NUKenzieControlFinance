@@ -1,0 +1,10 @@
+.form_box {
+    padding: 2.5rem 3rem;
+    border: 2px solid var(--color-grey-2);
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+}

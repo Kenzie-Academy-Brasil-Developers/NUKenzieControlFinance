@@ -1,0 +1,32 @@
+.button {
+    &.primary {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 0.6rem;
+
+        color: var(--color-grey-1);
+        background-color: var(--color-primary);
+        font-weight: var(--font-weight-500);
+        font-size: var(--font-size-16);
+        border: 2px solid var(--color-primary);
+        border-radius: 0.5rem;
+        padding: 13px 20px;
+        line-height: 1.25rem;
+
+        transition: .4s;
+    }
+
+    &.primary:hover {
+        background-color: var(--color-primary-2);
+    }
+
+    &.grey2 {
+        background-color: var(--color-grey-2);
+        width: 3.125rem;
+        padding: 3px 5px;
+        border-radius: 2px;
+        color: var(--color-grey-4);
+    }
+}
