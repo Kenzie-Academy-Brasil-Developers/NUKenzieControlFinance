@@ -20,7 +20,11 @@ export const MainPage = () => {
     }
 
     const totalValue = noteList.reduce((prevValue, note) => {
-        return prevValue + Number(note.value)
+        if (note.type == "Entrada") {
+            return prevValue + Number(note.value)
+        } else {
+            return prevValue - Number(note.value)
+        }
     }, 0)
 
     return (
